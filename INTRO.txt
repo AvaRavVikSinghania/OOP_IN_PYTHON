@@ -1,0 +1,41 @@
+Everything in  python is an object
+
+what is an object.
+
+Generality to Specificality
+
+what is object oriented programming
+
+1 Object 
+2 class
+3 Abstraction
+4 Inheritance
+5 Encapsulation
+6 polymorphism
+
+
+
+Class: class is a blueprint
+    Class:
+      Data or Property 
+      Functions or Behavior 
+
+
+Class name should be Pascal case
+  => ThisIsPascalCase
+snake case
+  => this_is_snake_case
+Data and function name should be snake case
+
+
+Object: Object is an instance of the class
+
+
+what is object literal
+L = [1,2,3]
+L = list()
+name = str()
+
+
+We want to create a class which basically does every function
+like Real ATM

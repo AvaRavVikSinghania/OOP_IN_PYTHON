@@ -1,0 +1,25 @@
+#instance variable
+  All the variable created inside the constructor called instance variable
+  Reason is that these variable have different different value according to the data instance
+  How to make the instance variable private __variable_name and method name we can private __method_name()
+  How to access private instance
+  {object_name}_{class_name}__variable_name = value
+  
+#Nothing in python is truly private
+
+For accessing the private instance variable we can make the get method and set method
+In this way we do not give access to the user to use private variable 
+and Now we can controll the type and value of private instance variable
+So int this way we are making getter and setter for every data member 
+this is called Encapsulation
+These are function inside the Encapsulation
+   Make private attributes
+   getter and setter method
+
+
+
+reference variable
+pass by reference
+
+class object are also mutable like lists ,dict and set
+immutable object
