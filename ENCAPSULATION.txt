@@ -23,3 +23,24 @@ pass by reference
 
 class object are also mutable like lists ,dict and set
 immutable object
+
+
+instance variable => it is a variable which value is different for every object
+Ex IFSC CODE
+Static variable : it is variable which value is same for every object
+instance variable : different for every object
+
+How to access these two variable
+for instance variable self.variable_name
+for Static variable class_name.variable_name
+
+To make Static function we do not need self (object)  because we do not need 
+So define it we write @staticmethod before the function
+we need static method when we deal with static variable
+
+
+
+Relationship between classes
+1.(Aggregation):Has-A     2.(Inheritance):Is-A
+
+In class Diagram we represent via open diamond
