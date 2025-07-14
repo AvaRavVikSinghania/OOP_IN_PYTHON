@@ -1,0 +1,93 @@
+Same function has different form or Behavior
+There are 4 ways to achieve polymorphism
+   1. Duck Typing in python
+   2. Method Overloading
+   3. Operator Overloading
+   4. Method Overriding
+
+1. Duck Typing allowed to data type dynamic (There are two things dynamic typing and static typing)
+python is dynamic type language
+
+def square(x):
+   return x*x
+
+print(square(4))
+print(square(4.5))
+
+
+This is static typing
+    int square(int a){
+        return a*a;
+    }
+
+    int ans = square(4)
+
+
+2. Operator Overloading
+   print(1 + 2)
+   print("1" + "2")
+
+   print(int.__add__(1, 2));
+   print(str.__add__("1", "2"));
+
+class ComplexNumber:
+    def __init__(self,r,i):
+        self.real = r
+        self.imaginary = i;
+    
+    def __add__(self , other):
+        temp_real = self.real + other.real
+        temp_imaginary = self.imaginary + other.imaginary
+        return "{} + {}i".format(temp_real ,temp_imaginary)
+
+So from here we have Overloaded the + (add) method 
+
+
+
+3. Method Overloading(Python does not support but we can achieve this) and Overriding
+  class Demo:
+     //def add(self,a,b):
+     //  return a + b
+     
+     def add(self,a,b,c=0):
+       return a + b + c
+
+     # second ways to achieve this
+     def add (self ,*args)
+       total = 0;
+       for num in args:
+          total +=num;
+       return total
+
+D=Demo();
+print(d.add(1,2)) //it will give error
+print(d.add(1,2,3))
+# Compile time polymorphism
+
+
+
+4 Method Overriding:
+  it is implemented in Inheritance we need to two class to and inherited Relationship
+
+class Father:
+   def sleep(self):
+      print("sleep at 8 pm)
+    
+   def eat(self):
+      print("Eating")
+  
+
+class Son(Father):
+   def sleep(self):
+      print("Sleep at 2 AM")
+      super().sleep()
+
+Run time polymorphism
+
+#Method Overloading has same name with different parameter
+#method Overriding  has same name and same parameter with same order
+
+
+Diamond problem  
+MRO is the solution of diamond problem
+MRO uses C3 linearisation Algorithm 
